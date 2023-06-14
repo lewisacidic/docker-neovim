@@ -45,7 +45,7 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           context: "{{ defaultContext }}:${{ matrix.distro }}"
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           cache-to: type=gha,scope=$GITHUB_REF_NAME-${{ matrix.distro }}
