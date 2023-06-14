@@ -9,7 +9,7 @@ on:
 env:
   registry: ghcr.io
   distro: lazyvim
-  package: ${{ github.repository_owner }}/${{ env.distro }}
+  package: ${{ github.repository_owner }}/lazyvim
 
 jobs:
   docker:
